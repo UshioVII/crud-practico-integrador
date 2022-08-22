@@ -34,23 +34,23 @@ const controller = {
     // Create -  Method to store
     store: (req, res) => {
         // Do the magic
-        return { name, price, discount, description, category } = req.body;
+        const {name, price, discount, description, category} = req.body;
         let products = loadProducts();
-        const newProduct = {
-            id: products[products.length - 1].id + 1,
+
+        const newProduct ={
+            id : products[products.length - 1].id + 1,
             name: name.trim(),
             price: +price,
             description: description.trim(),
             discount: +discount,
             category,
-            image: "default-image.png"
+            Image: "default-image.png"
         }
-
         productsModify = [...products, newProduct];
 
-        storeProducts(productsModify);
+        storeProducts(productsModify)
 
-        return res.redirect("/product")
+        return res.redirect("/products")
     },
 
     // Update - Form to edit
@@ -63,11 +63,30 @@ const controller = {
     // Update - Method to update
     update: (req, res) => {
         // Do the magic
+        const {name, price, discount, description, category} = req.body;
+        let productsModify = loadProducts().map(product =>{
+            if(product.id === +req.params.id){
+                return{
+                    id : product.id,
+                    name: name.trim(),
+                    price: +price,
+                    description: description.trim(),
+                    discount: +discount,
+                    category,
+                    Image: product.image
+                }
+            }
+            return product
+        })
+        storeProducts(productsModify);
+        return res.redirect("/products/detail/" + req.params.id)
     },
-
     // Delete - Delete one product from DB
     destroy: (req, res) => {
         // Do the magic
+        let productsModify = loadProducts().filter(product => product.id !== +req.params.id);
+        storeProducts(productsModify);
+        return res.redirect("/products")
     }
 };
 
