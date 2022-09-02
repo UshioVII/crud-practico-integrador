@@ -1,0 +1,37 @@
+[
+   {
+      "id": 1,
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": ""
+   },
+   {
+      "id": 2,
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "password": ""
+   },
+   {
+      "id": 3,
+      "firstname": "Diego",
+      "lastname": "Montes",
+      "email": "diegomontes2013@gmail.com",
+      "password": "holaprofe"
+   },
+   {
+      "id": 4,
+      "firstname": "MiniEric",
+      "lastname": "Montes",
+      "email": "github.com@xSAISAISAI.com",
+      "password": "こんにちは"
+   },
+   {
+      "id": 5,
+      "firstname": "test",
+      "lastname": "test",
+      "email": "test@gmail.com",
+      "password": "estoesuntest"
+   }
+]

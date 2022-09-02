@@ -44,7 +44,7 @@ const controller = {
             description: description.trim(),
             discount: +discount,
             category,
-            Image: "default-image.png"
+            image: "default-image.png"
         }
         productsModify = [...products, newProduct];
 
@@ -73,7 +73,7 @@ const controller = {
                     description: description.trim(),
                     discount: +discount,
                     category,
-                    Image: product.image
+                    image: product.image
                 }
             }
             return product
