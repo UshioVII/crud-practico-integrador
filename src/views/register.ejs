@@ -12,7 +12,7 @@
     <div class="container products-wrapper">
         <div class="row">
             <div class="col-12">
-                <h2 class="products-title">Crea una cuenta, profe. (Aun no le implemente el Hash, porque eso en el siguente trabajo practico c:)</h2>
+                <h2 class="products-title">Crea una cuenta</h2>
             </div>
         </div>
         <div class="col-12">
@@ -40,19 +40,7 @@
                             <h3 class="form__text--error"><%= locals.errors && errors.password ? errors.password.msg :null %></h3>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="form__box--column ">
-                            <div class="form__box--flex">
-                                <input class="form__checkbox" type="checkbox" id="terminos" name="terms">
-                                <label class="form__label--" for="terminos">Acepto los <a href="/terms" target="_blank">términos y condiciones</a></label>
-                            </div>
-                            <div class="form__box--flex">
-                                <h3 class="form__text--error"><%= locals.errors && errors.terms ? errors.terms.msg :null %></h3>
-                            </div>
-                        </div>
-                    </div>
                     <div class="form-box">
-                        <a href="" class="">Cancelar</a>
                         <button  class="form__button form__button--send" type="submit">Registrate</button>
                     </div>
                 </div>

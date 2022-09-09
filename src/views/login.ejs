@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <form action="" method="post">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" name="email" id="email">
-            <label for="password">Contraseña:</label>
-            <input type="password" name="password" id="password">
-            <button type="submit">Registrarse</button>
-        </form>
-    </body>
+<html lang="es">
+
+    <%- include('./partials/head',{
+        title : 'login'
+    })  %> 
+
+
+<body class="login">
+    <%- include('partials/headerNavbar')  %> 
+
+    <div class="container products-wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="products-title">Iniciar sesión</h2>
+            </div>
+        </div>
+        <div class="col-12">
+            <form action="" method="post">
+                <div class="row product-detail">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label" for="email">Email:</label>
+                        <input class="form-input" type="email" id="email" name="email" value="<%= locals.old && old.email ? old.email : null %>">
+                        <h3 class="form__text--error"><%= locals.errors && errors.email ? errors.email.msg :null %></h5>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label" for="password">Contraseña:</label>
+                            <input class="form-input" type="password" id="password" name="password" value="<%= locals.old && old.password ? old.password : null %>">
+                            <h3 class="form__text--error"><%= locals.errors && errors.password ? errors.password.msg :null %></h3>
+                        </div>
+                    </div>
+                    <div class="form__box form__box--flex">
+                        <input class="form__checkbox" type="checkbox" id="terminos" name="remember">
+                        <label class="form__label" for="terminos">Recordame</label>
+                    </div>
+                    <div class="form-box">
+                        <button type="submit">Iniciar sesión</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
 </html>

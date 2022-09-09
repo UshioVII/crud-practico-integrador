@@ -1,37 +1,30 @@
 [
    {
       "id": 1,
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "password": ""
+      "firstname": "diego",
+      "lastname": "montes",
+      "email": "diegomontes2013@gmail.com",
+      "password": "$2a$10$5VIPn4FqCAgzaIpjrETBZeM90Dbu/JlEltPLI/HEfWQjh/mdJY8K6"
    },
    {
       "id": 2,
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "password": ""
+      "firstname": "asdas",
+      "lastname": "asdas",
+      "email": "asdasd@gmail.com",
+      "password": "$2a$10$qZ9Bj8OyKIT2W7tz.jS5x.o.98CTDzmBoMnQKMcHqKLRpgJr/yL3."
    },
    {
       "id": 3,
-      "firstname": "Diego",
-      "lastname": "Montes",
-      "email": "diegomontes2013@gmail.com",
-      "password": "holaprofe"
+      "firstname": "axelito",
+      "lastname": "axelito",
+      "email": "axelito@gmail.com",
+      "password": "$2a$10$ZEU6N4hMGnfztiU.Hsgfq./tvCDOizpYpOjy2DAaTVeoVfF.LbAXO"
    },
    {
       "id": 4,
-      "firstname": "MiniEric",
-      "lastname": "Montes",
-      "email": "github.com@xSAISAISAI.com",
-      "password": "こんにちは"
-   },
-   {
-      "id": 5,
-      "firstname": "test",
-      "lastname": "test",
-      "email": "test@gmail.com",
-      "password": "estoesuntest"
+      "firstname": "completo",
+      "lastname": "completo",
+      "email": "completo@gmail.com",
+      "password": "$2a$10$72ojr548HklfnmMnQv.FtOJbgjVUD1z2khYDENJdFG7iu6d3zW1VW"
    }
 ]
